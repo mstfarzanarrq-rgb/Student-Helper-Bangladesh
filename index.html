@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Helper BD | Students-এর এক জায়গার সহায়ক</title>
+<meta name="description" content="Student Helper BD — GPA calculator, percentage calculator, HSC study resources and useful student tools.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a class="logo" href="#">Student Helper BD</a>
+    <div class="navlinks">
+      <a href="#tools">Tools</a><a href="#subjects">Subjects</a><a href="#resources">Resources</a><a href="#about">About</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <p class="eyebrow">বাংলাদেশি শিক্ষার্থীদের জন্য</p>
+    <h1>পড়াশোনার দরকারি জিনিস—এক জায়গায়।</h1>
+    <p class="lead">GPA, Percentage, Exam Countdown এবং HSC study resources সহজভাবে ব্যবহার করো।</p>
+    <a class="btn" href="#tools">Tools দেখো ↓</a>
+  </div>
+</section>
+
+<section id="tools" class="section">
+<h2>🧮 Student Tools</h2>
+<div class="grid">
+  <article class="card">
+    <h3>GPA Calculator</h3>
+    <p>একাধিক subject-এর GPA দিয়ে average হিসাব করো।</p>
+    <input id="gpa1" type="number" min="0" max="5" step="0.01" placeholder="GPA 1">
+    <input id="gpa2" type="number" min="0" max="5" step="0.01" placeholder="GPA 2">
+    <input id="gpa3" type="number" min="0" max="5" step="0.01" placeholder="GPA 3">
+    <button onclick="calcGPA()">Calculate</button>
+    <p id="gpaResult" class="result"></p>
+  </article>
+
+  <article class="card">
+    <h3>Percentage Calculator</h3>
+    <p>প্রাপ্ত নম্বর থেকে percentage বের করো।</p>
+    <input id="obtained" type="number" placeholder="প্রাপ্ত নম্বর">
+    <input id="total" type="number" placeholder="মোট নম্বর">
+    <button onclick="calcPercentage()">Calculate</button>
+    <p id="percentResult" class="result"></p>
+  </article>
+
+  <article class="card">
+    <h3>Exam Countdown</h3>
+    <p>নিজের exam date বসিয়ে countdown দেখো।</p>
+    <input id="examDate" type="date">
+    <button onclick="countdown()">Check</button>
+    <p id="countResult" class="result"></p>
+  </article>
+</div>
+</section>
+
+<section id="subjects" class="section">
+<h2>📚 HSC Subjects</h2>
+<div class="subject-grid">
+  <div class="subject">বাংলা</div><div class="subject">ইংরেজি</div>
+  <div class="subject">ICT</div><div class="subject">অর্থনীতি</div>
+  <div class="subject">সমাজবিজ্ঞান</div><div class="subject">পৌরনীতি</div>
+  <div class="subject">ইসলামের ইতিহাস</div><div class="subject">অন্যান্য</div>
+</div>
+<p class="note">এখানে পরে chapter-wise notes, MCQ ও previous questions যোগ করা যাবে।</p>
+</section>
+
+<section id="resources" class="section">
+<h2>📝 Study Resources</h2>
+<div class="grid">
+  <article class="card"><h3>Easy Notes</h3><p>কঠিন বিষয় সহজ ভাষায় বোঝানোর notes এখানে প্রকাশ করা হবে।</p></article>
+  <article class="card"><h3>MCQ Practice</h3><p>বিষয়ভিত্তিক practice MCQ যোগ করা যাবে।</p></article>
+  <article class="card"><h3>Previous Questions</h3><p>বোর্ড ও পরীক্ষাভিত্তিক প্রশ্নের resource section।</p></article>
+</div>
+</section>
+
+<section id="about" class="section about">
+<h2>ℹ️ About Student Helper BD</h2>
+<p>Student Helper BD-এর লক্ষ্য হলো শিক্ষার্থীদের জন্য দরকারি study resources ও ছোট ছোট online tools এক জায়গায় দেওয়া।</p>
+</section>
+</main>
+
+<footer>
+<p>© 2026 Student Helper BD · Built for students</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
