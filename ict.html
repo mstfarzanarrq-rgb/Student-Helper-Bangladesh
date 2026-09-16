@@ -1,4 +1,5 @@
-n:15p<!DOCTYPE html>
+ollrgiucko
+<!DOCTYPE html>
 <html lang="bn">
 <head>
 <meta charset="UTF-8">
@@ -7,6 +8,10 @@ n:15p<!DOCTYPE html>
 <title>ICT | Student Helper Bangladesh</title>
 
 <style>
+*{
+  box-sizing:border-box;
+}
+
 body{
   font-family:Arial,sans-serif;
   margin:0;
@@ -15,46 +20,77 @@ body{
 }
 
 header{
-  background:#fff;
-  padding:20px;
+  background:linear-gradient(135deg,#6c5ce7,#00b894);
+  color:white;
+  padding:28px 15px;
   text-align:center;
-  border-bottom:1px solid #ddd;
 }
 
-h1{
-  margin:5px 0;
+header h1{
+  margin:0 0 8px;
+  font-size:30px;
+}
+
+header p{
+  margin:0;
 }
 
 .container{
-  max-width:800px;
-  margin:30px auto;
-  padding:20px;
+  max-width:850px;
+  margin:25px auto;
+  padding:15px;
 }
 
-.card{
-  background:white;
-  padding:20px;
-  margin:15px 0;
-  border-radius:12px;
+.title{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.chapter-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
 }
 
 .chapter{
   display:block;
-  background:#f1f4f9;
-  padding:14px;
-  margin:10px 0;
-  border-radius:8px;
-  color:#222;
+  padding:22px 15px;
+  border-radius:15px;
+  color:white;
   text-decoration:none;
+  font-size:17px;
+  font-weight:bold;
+  text-align:center;
+  box-shadow:0 5px 12px rgba(0,0,0,.10);
+  transition:.2s;
 }
 
 .chapter:hover{
-  background:#e4e9f2;
+  transform:translateY(-3px);
 }
 
+.c1{background:#6c5ce7;}
+.c2{background:#0984e3;}
+.c3{background:#00b894;}
+.c4{background:#e17055;}
+.c5{background:#fdcb6e;color:#222;}
+.c6{background:#a29bfe;}
+
 .back{
+  display:block;
+  text-align:center;
+  margin-top:25px;
+  padding:14px;
+  background:white;
+  border-radius:12px;
   color:#333;
   text-decoration:none;
+}
+
+@media(max-width:600px){
+  .chapter-grid{
+    grid-template-columns:1fr;
+  }
 }
 </style>
 </head>
@@ -62,46 +98,56 @@ h1{
 <body>
 
 <header>
-<h1>💻 ICT</h1>
-<p>Student Helper Bangladesh</p>
+  <h1>💻 ICT</h1>
+  <p>Student Helper Bangladesh</p>
 </header>
 
 <div class="container">
 
-<div class="card">
+  <div class="title">
+    <h2>📚 ICT-এর ৬টি অধ্যায়</h2>
+    <p>যে অধ্যায় পড়তে চাও সেটিতে ক্লিক করো</p>
+  </div>
 
-<h2>📝 Easy Notes — ৬টি অধ্যায়</h2>
+  <div class="chapter-grid">
 
-<a class="chapter" href="#">অধ্যায় ১ — তথ্য ও যোগাযোগ প্রযুক্তি: বিশ্ব ও বাংলাদেশ</a>
+    <a class="chapter c1" href="ict-chapter1.html">
+      ১️⃣ অধ্যায় ১<br>
+      তথ্য ও যোগাযোগ প্রযুক্তি
+    </a>
 
-<a class="chapter" href="#">অধ্যায় ২ — কমিউনিকেশন সিস্টেমস ও নেটওয়ার্কিং</a>
+    <a class="chapter c2" href="#">
+      ২️⃣ অধ্যায় ২<br>
+      কমিউনিকেশন সিস্টেমস ও নেটওয়ার্কিং
+    </a>
 
-<a class="chapter" href="#">অধ্যায় ৩ — সংখ্যা পদ্ধতি ও ডিজিটাল ডিভাইস</a>
+    <a class="chapter c3" href="#">
+      ৩️⃣ অধ্যায় ৩<br>
+      সংখ্যা পদ্ধতি ও ডিজিটাল ডিভাইস
+    </a>
 
-<a class="chapter" href="#">অধ্যায় ৪ — ওয়েব ডিজাইন পরিচিতি ও HTML</a>
+    <a class="chapter c4" href="#">
+      ৪️⃣ অধ্যায় ৪<br>
+      ওয়েব ডিজাইন ও HTML
+    </a>
 
-<a class="chapter" href="#">অধ্যায় ৫ — প্রোগ্রামিং ভাষা</a>
+    <a class="chapter c5" href="#">
+      ৫️⃣ অধ্যায় ৫<br>
+      প্রোগ্রামিং ভাষা
+    </a>
 
-<a class="chapter" href="#">অধ্যায় ৬ — ডেটাবেজ ম্যানেজমেন্ট সিস্টেম</a>
+    <a class="chapter c6" href="#">
+      ৬️⃣ অধ্যায় ৬<br>
+      ডেটাবেজ ম্যানেজমেন্ট
+    </a>
 
-</div>
+  </div>
 
-<div class="card">
-<h2>❓ MCQ Practice</h2>
-<p>ICT বিষয়ের MCQ practice এখানে যোগ করা হবে।</p>
-</div>
-
-<div class="card">
-<h2>📖 Previous Questions</h2>
-<p>বোর্ড পরীক্ষার previous questions এখানে যোগ করা হবে।</p>
-</div>
-
-<div class="card">
-<a class="back" href="index.html">← মূল পেজে ফিরে যাও</a>
-</div>
+  <a class="back" href="index.html">
+    ← মূল পেজে ফিরে যাও
+  </a>
 
 </div>
 
 </body>
 </html>
-ao
