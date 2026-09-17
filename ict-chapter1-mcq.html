@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICT অধ্যায় ১ — MCQ | Student Helper Bangladesh</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f4f7ff;
+  color:#222;
+}
+
+.header{
+  background:linear-gradient(135deg,#6c5ce7,#00cec9);
+  color:white;
+  padding:25px 15px;
+  text-align:center;
+}
+
+.header h1{
+  margin:0;
+  font-size:25px;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+}
+
+.filter-box{
+  background:white;
+  padding:18px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+select{
+  width:100%;
+  padding:12px;
+  margin:7px 0 12px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  font-size:15px;
+  box-sizing:border-box;
+}
+
+.mcq{
+  background:white;
+  margin-top:18px;
+  padding:18px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.question{
+  font-size:17px;
+  font-weight:bold;
+  line-height:1.6;
+}
+
+.option{
+  margin-top:10px;
+  padding:12px;
+  background:#f5f5f5;
+  border-radius:10px;
+}
+
+.correct{
+  background:#b7f7c4 !important;
+  border:2px solid #20a044;
+}
+
+.eye{
+  float:right;
+  border:0;
+  background:#eee;
+  border-radius:50%;
+  width:38px;
+  height:38px;
+  font-size:19px;
+  cursor:pointer;
+}
+
+.meta{
+  color:#666;
+  font-size:14px;
+  margin-top:12px;
+}
+
+.back{
+  display:block;
+  text-align:center;
+  margin-top:25px;
+  text-decoration:none;
+  color:#6c5ce7;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>❓ ICT — অধ্যায় ১ MCQ</h1>
+  <p>তথ্য ও যোগাযোগ প্রযুক্তি: বিশ্ব ও বাংলাদেশ</p>
+</div>
+
+<div class="container">
+
+<div class="filter-box">
+
+<label>প্রশ্নের ধরন</label>
+<select>
+<option>সকল</option>
+<option>বোর্ড</option>
+<option>কলেজ</option>
+</select>
+
+<label>টপিক</label>
+<select>
+<option>সকল টপিক</option>
+<option>বিশ্বগ্রাম</option>
+<option>ভার্চুয়াল রিয়েলিটি</option>
+<option>কৃত্রিম বুদ্ধিমত্তা</option>
+<option>রোবোটিক্স</option>
+<option>বায়োমেট্রিক্স</option>
+<option>ন্যানো টেকনোলজি</option>
+</select>
+
+<label>সাল</label>
+<select>
+<option>সকল সাল</option>
+<option>2017</option>
+<option>2018</option>
+<option>2019</option>
+<option>2020</option>
+<option>2021</option>
+<option>2022</option>
+<option>2023</option>
+<option>2024</option>
+<option>2025</option>
+<option>2026</option>
+</select>
+
+</div>
+
+
+<div class="mcq">
+
+<button class="eye" onclick="showAnswer(1)">👁️</button>
+
+<div class="question">
+১. কৃত্রিম বুদ্ধিমত্তার ইংরেজি নাম কী?
+</div>
+
+<div class="option">A. Virtual Reality</div>
+<div class="option correct" id="answer1">B. Artificial Intelligence</div>
+<div class="option">C. Robotics</div>
+<div class="option">D. Biometrics</div>
+
+<div class="meta">
+ফৌজদারহাট ক্যাডেট · 2026
+</div>
+
+</div>
+
+
+<div class="mcq">
+
+<button class="eye" onclick="showAnswer(2)">👁️</button>
+
+<div class="question">
+২. ব্যক্তি শনাক্তকরণে কোন প্রযুক্তি ব্যবহার করা হয়?
+</div>
+
+<div class="option">A. Nanotechnology</div>
+<div class="option">B. Virtual Reality</div>
+<div class="option correct" id="answer2">C. Biometrics</div>
+<div class="option">D. Robotics</div>
+
+<div class="meta">
+রংপুর ক্যাডেট · 2026
+</div>
+
+</div>
+
+
+<div class="mcq">
+
+<button class="eye" onclick="showAnswer(3)">👁️</button>
+
+<div class="question">
+৩. ক্ষুদ্রাতিক্ষুদ্র প্রযুক্তিকে কী বলা হয়?
+</div>
+
+<div class="option">A. Robotics</div>
+<div class="option correct" id="answer3">B. Nanotechnology</div>
+<div class="option">C. Biometrics</div>
+<div class="option">D. Artificial Intelligence</div>
+
+<div class="meta">
+কলেজ প্রশ্ন · 2026
+</div>
+
+</div>
+
+
+<a class="back" href="ict-chapter1.html">
+← অধ্যায় ১ এ ফিরে যাও
+</a>
+
+</div>
+
+
+<script>
+function showAnswer(number){
+
+  const answer = document.getElementById("answer" + number);
+
+  if(answer.classList.contains("correct-show")){
+    answer.classList.remove("correct-show");
+    answer.style.background = "#f5f5f5";
+    answer.style.border = "none";
+  }else{
+    answer.classList.add("correct-show");
+    answer.style.background = "#b7f7c4";
+    answer.style.border = "2px solid #20a044";
+  }
+
+}
+</script>
+
+</body>
+</html>
